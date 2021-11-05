@@ -244,7 +244,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  array.split(5,19)
+  array.split()
   return array;
 }
 
@@ -259,9 +259,10 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number) {
-  /*Your Code Here*/
+  array.splice(1,1)
+  return array.length;
 }
-
+console.log('Task 5:', removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -280,9 +281,20 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  array.push([])
+  let addArtist = [
+    {
+      id: 20,
+      name: 'Schuyler Minor',
+      years: '1991 - Current Day',
+      genre: 'Web Design',
+      nationality:'American',
+      bio: 'Schuyler(sky-ler) Logan Minor was born and raised in Kansas City. The Paris of the plains was a formidable training ground and helped define him.'
+    }
+  ]
+  array.push(addArtist)
+  return array;
 }
-
+console.log('Task 6:', addArtist(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -293,9 +305,12 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  /*Your Code Here*/
+  let lotsOfArt = []; {
+    if(array.paintings > 100)
+    return array.name;
+  }
 }
-
+console.log('Task 7:', lotsOfArt(artists))
 
 /* ***** END OF TASKS ***** */
 
