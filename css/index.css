@@ -135,13 +135,24 @@ button:hover{
     width:100%;
 }
 
-@media(min-width: 500px) {
+@media(max-width: 500px) {
+    nav{
+        width:60%;
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:5%;
+       font-size: small;     
+    }
+    .title-container div{
+        display: flex;
+        width: 100%;
+    }
 
     .artists-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
        
     }
@@ -150,6 +161,11 @@ button:hover{
         text-align: center;
     }
     .artist img{
-        width: 100%;
+        display: flex;
+        height: 70%;
+    }
+    .artist .bio{
+        font-size: small;
+    }
     }
 }
